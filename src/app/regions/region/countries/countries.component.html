@@ -1,0 +1,31 @@
+<div class="country" *ngIf="!country">
+  <span>{{flag}}</span>
+  <h4>{{countryName}}</h4>
+</div>
+
+<div *ngIf="country">
+  <ng-container *ngFor="let country of countryInfo">
+    <div class="country-info">
+      <h3>{{country.name.common}}</h3>
+      <div class="country-table">
+        <div class="header">
+          <span>{{country.flag}}</span>
+          <h1>{{country.cca2}}</h1>
+        </div>
+        <div class="body">
+          <h3>Stolica: {{country.capital}}</h3>
+          <h3>Waluta: {{currencySymbol }} ({{ currencyName}})</h3>
+          <h3>Populacja: {{country.population}}</h3>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <!-- {{country}} -->
+
+  </ng-container>
+</div>

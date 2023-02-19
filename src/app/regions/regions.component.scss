@@ -1,0 +1,29 @@
+.wrapper{
+  display: grid;
+  grid-template-rows: 100px 1fr;
+  justify-content: center;
+  align-items: center;
+}
+.title{
+  text-align: center;
+}
+.regions{
+  border: 1px solid grey;
+  max-width: 1120px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.region{
+  margin: 1rem;
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+}
+.region:hover{
+  background-color: azure;
+}

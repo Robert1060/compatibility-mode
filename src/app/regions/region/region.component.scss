@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+.countries-wrapper{
+  border: 1px solid grey;
+  max-width: 70%;
+  width: 1120px;
+  height: 70vh;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.region-title {
+  text-transform: capitalize;
+  position: absolute;
+  left: 5rem;
+  top: 5rem;
+  font-size: 1.5rem;
+}
