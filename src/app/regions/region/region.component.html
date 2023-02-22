@@ -1,15 +1,13 @@
-<!-- <h2>{{_regionName}}</h2> -->
+<mat-progress-bar mode="indeterminate" *ngIf="isLoading && region" mode="indeterminate"></mat-progress-bar>
 <h2>{{regionName}}</h2>
 
 <div class="wrapper" *ngIf="region">
+
   <h3 class="region-title">Region: {{region}}</h3>
   <div class="countries-wrapper">
     <app-countries *ngFor="let country of countries" [flag]="country.flag" [countryName]="country.name.common"
-      (click)="navigateToCountry(country.name.common.toLowerCase())">
+      (click)="navigateToCountry(country.name.common.toLowerCase())" class="pointer">
     </app-countries>
-    <!-- <h5>{{getCountries(region) | async}}</h5> -->
-    <!-- <app-countries></app-countries> -->
-
   </div>
 
 </div>

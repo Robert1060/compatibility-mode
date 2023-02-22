@@ -1,3 +1,4 @@
+<mat-progress-bar *ngIf="country && isLoading"></mat-progress-bar>
 <div class="country" *ngIf="!country">
   <span>{{flag}}</span>
   <h4>{{countryName}}</h4>
@@ -15,17 +16,9 @@
         <div class="body">
           <h3>Stolica: {{country.capital}}</h3>
           <h3>Waluta: {{currencySymbol }} ({{ currencyName}})</h3>
-          <h3>Populacja: {{country.population}}</h3>
+          <h3>Populacja: {{population}} miliona</h3>
         </div>
       </div>
     </div>
-
-
-
-
-
-
-    <!-- {{country}} -->
-
   </ng-container>
 </div>

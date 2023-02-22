@@ -12,8 +12,9 @@ import { RegionComponent } from './regions/region/region.component';
 import { CountriesComponent } from './regions/region/countries/countries.component';
 import { LetModule } from '@ngrx/component';
 import { StoreModule } from '@ngrx/store';
-import { regionReducer } from './regions/actions/regions-reducer';
-
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { AboutMeDialogComponent } from './about-me/about-me.component'
+import { MatDialogModule } from '@angular/material/dialog';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +23,7 @@ import { regionReducer } from './regions/actions/regions-reducer';
     RegionComponent,
     CountriesComponent,
     RegionsComponent,
+    AboutMeDialogComponent,
     
   ],
   imports: [
@@ -31,8 +33,8 @@ import { regionReducer } from './regions/actions/regions-reducer';
     MatIconModule,
     MatButtonModule,
     LetModule,
-    StoreModule.forRoot({region: regionReducer})
-
+    MatProgressBarModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

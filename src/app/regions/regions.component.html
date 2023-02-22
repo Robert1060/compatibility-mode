@@ -1,9 +1,8 @@
 <div class="wrapper">
-  <h2 class="title">Choose region</h2>
+  <h2 class="title">Wybierz region</h2>
   <div class="regions">
     <app-region #regionCompo class="region" *ngFor="let region of regions" [regionName]="region.name" [testFlag]="false"
-      (click)="navigateToRegion(region.name.toLowerCase())">
-      <!-- <app-countries [region]="region.name"></app-countries> -->
+      (click)="navigateToRegion(region.name.toLowerCase())" ngClass="pointer">
     </app-region>
   </div>
 </div>

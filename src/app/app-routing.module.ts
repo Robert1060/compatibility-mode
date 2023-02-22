@@ -18,26 +18,6 @@ const routes: Routes = [
     title:'region',
     component: CountriesComponent
   },
-  // {
-  //   path:'regions/america',
-  //   title:'africa',
-  //   component: RegionComponent
-  // },
-  // {
-  //   path:'regions/asia',
-  //   title:'africa',
-  //   component: RegionComponent
-  // },
-  // {
-  //   path:'regions/europe',
-  //   title:'africa',
-  //   component: RegionComponent
-  // },
-  // {
-  //   path:'regions/oceania',
-  //   title:'africa',
-  //   component: RegionComponent
-  // }
 ];
 
 @NgModule({
